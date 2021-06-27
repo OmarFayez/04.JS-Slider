@@ -45,9 +45,11 @@ body
 }
 .lightbox-item i 
 {
-    font-size: 18px;
+    font-size: 25px;
     margin: 10px;
     cursor: pointer;
+    color: #333;
+    transition: color .3s;
 }
 .lightbox-item i:hover
 {
@@ -61,11 +63,20 @@ body
     top: 10px;
 }
 
-@media all and (max-width:768px)
+@media all and (max-width:992px)
 {
     .lightbox-item
     {
-        width: 70%;
+        width: 80%;
+
+    }
+}
+@media all and (max-width:558px)
+{
+    .lightbox-item
+    {
+        width: 90%;
+        height: 60%;
 
     }
 }
